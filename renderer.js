@@ -8,6 +8,8 @@ function adicionarGasto(){
     const valor = Number(
         document.getElementById('valor').value
     )
+    const categoria = 
+        document.getElementById("categoria").value
 
     if(!descricao || !valor){
         return

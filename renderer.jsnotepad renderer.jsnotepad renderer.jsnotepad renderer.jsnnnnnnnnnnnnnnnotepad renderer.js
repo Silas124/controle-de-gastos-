@@ -7,6 +7,7 @@ function adicionarGasto(){
     const valor = Number(
         document.getElementById('valor').value
     )
+    const categoria = document.getElementById('categoria').value
 
     if(!descricao || !valor){
         return
@@ -17,7 +18,7 @@ function adicionarGasto(){
     const item = document.createElement('li')
 
     item.textContent =
-        `${descricao} - R$ ${valor}`
+`${descricao} | ${categoria} | R$ ${valor}`
 
     lista.appendChild(item)
 
