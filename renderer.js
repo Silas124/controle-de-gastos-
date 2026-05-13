@@ -1,6 +1,6 @@
- let total = 0
+let total = 0
 
-function adicionarGasto(){
+function adicionarGasto() {
 
     const descricao =
         document.getElementById('descricao').value
@@ -8,10 +8,11 @@ function adicionarGasto(){
     const valor = Number(
         document.getElementById('valor').value
     )
-    const categoria = 
-        document.getElementById("categoria").value
 
-    if(!descricao || !valor){
+    const categoria =
+        document.getElementById('categoria').value
+
+    if (!descricao || !valor) {
         return
     }
 
@@ -21,17 +22,38 @@ function adicionarGasto(){
     const item =
         document.createElement('li')
 
-    item.textContent =
-        `${descricao} - R$ ${valor}`
+    item.innerHTML = `
+        ${descricao} | ${categoria} | R$ ${valor.toFixed(2)}
+        <button onclick="removerGasto(this, ${valor})">
+            X
+        </button>
+    `
 
     lista.appendChild(item)
 
     total += valor
 
-    document.getElementById('total')
-        .textContent = total.toFixed(2)
+    atualizarTotal()
 
     document.getElementById('descricao').value = ''
 
     document.getElementById('valor').value = ''
+}
+
+function removerGasto(botao, valor) {
+
+    const item =
+        botao.parentElement
+
+    item.remove()
+
+    total -= valor
+
+    atualizarTotal()
+}
+
+function atualizarTotal() {
+
+    document.getElementById('total')
+        .textContent = total.toFixed(2)
 }
