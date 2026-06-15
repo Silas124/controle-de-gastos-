@@ -92,27 +92,28 @@
 </body>
 </html>
 
-async function selecionarComprovante() {
+window.selecionarComprovante = async function () {
 
   const input =
     document.getElementById("comprovante");
 
+  if (!input) {
+    alert("Input comprovante não encontrado");
+    return;
+  }
+
   input.click();
 
-  input.onchange = async (event) => {
+  input.onchange = function (event) {
 
     const arquivo =
       event.target.files[0];
 
     if (!arquivo) return;
 
-    alert(
-      "Imagem selecionada: " +
-      arquivo.name
-    );
+    alert("Imagem selecionada: " + arquivo.name);
 
     console.log(arquivo);
-
   };
 
-}
+};
