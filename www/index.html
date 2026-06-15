@@ -38,6 +38,10 @@
       Adicionar
     </button>
 
+    <button onclick="selecionarComprovante()">
+  📷 Ler Comprovante
+</button>
+
     <h2>
       Total: R$
       <span id="total">0</span>
@@ -77,7 +81,38 @@
 
   </div>
 
+  <input
+  type="file"
+  id="comprovante"
+  accept="image/*"
+  style="display:none"
+>
   <script src="renderer.js"></script>
 
 </body>
 </html>
+
+async function selecionarComprovante() {
+
+  const input =
+    document.getElementById("comprovante");
+
+  input.click();
+
+  input.onchange = async (event) => {
+
+    const arquivo =
+      event.target.files[0];
+
+    if (!arquivo) return;
+
+    alert(
+      "Imagem selecionada: " +
+      arquivo.name
+    );
+
+    console.log(arquivo);
+
+  };
+
+}

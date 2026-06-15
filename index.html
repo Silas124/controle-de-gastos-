@@ -2,10 +2,9 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Controle de Gastos</title>
-
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
@@ -37,6 +36,10 @@
     <button onclick="adicionarGasto()">
       Adicionar
     </button>
+
+    <button onclick="selecionarComprovante()">
+  📷 Ler comprovante
+</button>
 
     <h2>
       Total: R$
@@ -73,11 +76,18 @@
 
 </div>
 
-    <ul id="lista"></ul>
-
   </div>
+
+  <input
+  type="file"
+  id="comprovante"
+  accept="image/*"
+  style="display:none"
+>
 
   <script src="renderer.js"></script>
 
 </body>
 </html>
+
+

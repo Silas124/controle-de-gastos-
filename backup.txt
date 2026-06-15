@@ -76,3 +76,15 @@ ipcMain.handle("listar-gastos", async () => {
 
 });
 
+import { Camera, CameraResultType } from '@capacitor/camera';
+
+async function tirarFoto() {
+
+  const image = await Camera.getPhoto({
+    quality: 90,
+    allowEditing: false,
+    resultType: CameraResultType.Base64
+  });
+
+  console.log(image.base64String);
+}
