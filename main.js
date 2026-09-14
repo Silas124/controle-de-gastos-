@@ -3,7 +3,7 @@ const db = require("./database");
 const path = require("path");
 
 // ─── Chave Google Cloud Vision ────────────────────────────────────────────────
-const GOOGLE_API_KEY = "AIzaSyB1-FzebPHU-xS-kM6zYJrPMz_ba3GVVdE";
+const GOOGLE_API_KEY =;
 
 function createWindow() {
   const win = new BrowserWindow({
