@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #e9e9e9;
+  background: hsl(143, 92%, 26%);
   display: flex;
   justify-content: center;
   margin-top: 40px;
@@ -144,9 +144,6 @@ li {
   h2,
   h3,
   h4 {
-    text-align: center;
-  }
-  h5 {
     text-align: center;
   }
 }

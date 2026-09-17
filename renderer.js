@@ -113,9 +113,7 @@ function filtrarCategoria() {
 }
 
 // ─── Ler Comprovante ──────────────────────────────────────────────────────────
-// CORREÇÃO PRINCIPAL: a função estava fora do HTML/JS, dentro de uma tag
-// inexistente (<window.selecionarComprovante = ...>), por isso nunca era
-// carregada. Agora está aqui no renderer.js, corretamente definida.
+
 
 function selecionarComprovante() {
   const input = document.getElementById("comprovante");
@@ -125,8 +123,6 @@ function selecionarComprovante() {
     return;
   }
 
-  // Reseta o valor para garantir que o evento "change" dispare
-  // mesmo se o usuário selecionar o mesmo arquivo duas vezes
   input.value = "";
 
   input.onchange = function (event) {

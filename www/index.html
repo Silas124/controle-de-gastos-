@@ -22,12 +22,18 @@
       <option value="cola">Cola</option>
       <option value="linha">Linha</option>
       <option value="Outros">Outros</option>
+      <option value="agua">Agua</option>
+      <option value="luz">Luz</option>
+      <option value="aluguel">Aluguel</option>
     </select>
 
     <button onclick="adicionarGasto()">Adicionar</button>
     <button id="btnComprovante" onclick="selecionarComprovante()">
   📷 Ler Comprovante
 </button>
+
+    <button onclick="exportarDados()">Exportar Dados</button>
+
     <h2>Total: R$ <span id="total">0</span></h2>
 
     <div class="painel">
@@ -48,6 +54,9 @@
           <option value="tecido">Tecido</option>
           <option value="cola">Cola</option>
           <option value="linha">Linha</option>
+          <option value="aluguel">Aluguel</option>
+          <option value="luz">luz</option>
+          <option value="agua">agua</option>
           <option value="Outros">Outros</option>
         </select>
 
@@ -67,7 +76,7 @@
     style="position:absolute; left:-9999px;"
   />
 
-  <script src="renderer.js"></script>
+  <script type="module" src="renderer.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ZzaoVGWJ3JJkAf0jJrxl",
+    "categoria": "Outros",
+    "descricao": "espuma",
+    "valor": 20,
+    "timestamp": 1789524987614,
+    "data": "15/09/2026"
+  },
+  {
+    "id": "O58zj6WDNULiHGYoIFe1",
+    "valor": 426.55,
+    "categoria": "tecido",
+    "descricao": "Antuart Via Cliente | VISA",
+    "timestamp": 1784742266469,
+    "data": "22/07/2026"
+  },
+  {
+    "id": "oC20KmI0lA34lsyE821i",
+    "timestamp": 1783890205202,
+    "data": "12/07/2026",
+    "categoria": "Outros",
+    "descricao": "NEW STAR",
+    "valor": 33
+  },
+  {
+    "id": "pkAFs933Z0X027FblGgh",
+    "valor": 36.9,
+    "descricao": "Claro-",
+    "data": "05/07/2026",
+    "categoria": "Outros",
+    "timestamp": 1783302690922
+  },
+  {
+    "id": "lSQy49i1D0VnvMabXipf",
+    "valor": 100,
+    "categoria": "gasolina",
+    "descricao": "carro",
+    "timestamp": 1783301405230,
+    "data": "05/07/2026"
+  }
+]
