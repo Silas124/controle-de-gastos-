@@ -1,2 +1,4 @@
 node_modules
+gastos.db
 .env
+dados_gastos.json

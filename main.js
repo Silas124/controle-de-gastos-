@@ -118,4 +118,3 @@ ipcMain.handle("excluir-gasto", async (event, id) => {
       else resolve({ changes: this.changes });
     });
   });
-});
